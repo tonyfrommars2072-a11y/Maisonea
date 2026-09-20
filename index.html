@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Maisonéa Services — entretien des maisons, Airbnb et locaux professionnels, accompagnement, courses, repas et soutien à Paris.">
+<title>Maisonéa Services | Entretien & aide à domicile à Paris</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{
+  --ink:#173d38; --ink2:#102d29; --gold:#b78635; --gold2:#d7b66a;
+  --cream:#f8f4ea; --paper:#fffdf8; --line:#e5ddce; --muted:#66716e;
+  --green:#00a878; --shadow:0 18px 55px rgba(27,43,38,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;color:#182421;background:var(--paper);font-family:"DM Sans",Arial,sans-serif}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;margin:0;color:#122d29}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:999px;padding:14px 22px;font-weight:700;cursor:pointer;transition:.25s}
+.btn-gold{background:var(--gold);color:white;box-shadow:0 8px 20px #b7863530}.btn-gold:hover{transform:translateY(-2px);background:#9e7229}
+.btn-light{background:white;border-color:#d8d2c5;color:var(--ink)}.btn-light:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-wa{background:#00a878;color:#fff}.btn-wa:hover{background:#008e66;transform:translateY(-2px)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.94);backdrop-filter:blur(14px);border-bottom:1px solid #ece6da}
+.nav{height:100px;display:flex;align-items:center;gap:30px}
+.logo{width:297px;height:127px;object-fit:contain;transform:scale(1.08);transform-origin:left center}.navlinks{display:flex;align-items:center;justify-content:center;gap:24px;flex:1;font-size:14px;color:#48514f}.navlinks a{padding:37px 0;border-bottom:2px solid transparent}.navlinks a:hover{color:var(--ink);border-color:var(--gold)}
+.navright{display:flex;align-items:center;gap:10px}.lang{border:1px solid #ded8ca;border-radius:10px;padding:10px 12px;background:white}
+.mobile-menu{display:none}
+.hero{position:relative;overflow:hidden;background:var(--cream)}
+.hero-bg{position:absolute;inset:0;background:
+linear-gradient(90deg,rgba(248,244,234,.99) 0%,rgba(248,244,234,.91) 43%,rgba(248,244,234,.34) 72%,rgba(248,244,234,.15)),
+url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85') center/cover}
+.hero .container{position:relative;min-height:650px;display:flex;align-items:center}
+.hero-copy{width:min(760px,100%);padding:75px 0 100px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #e1c997;background:#fff9eb;color:#955f19;border-radius:999px;padding:9px 14px;font-size:13px;font-weight:700;margin-bottom:25px}
+.dot{width:9px;height:9px;border-radius:50%;background:#48b58b}
+.hero h1{font-size:clamp(46px,6vw,78px);line-height:1.02;letter-spacing:-2px;max-width:850px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:18px;line-height:1.7;max-width:760px;color:#495450;margin:25px 0}
+.checkgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin:25px 0 30px;max-width:800px}
+.check{font-size:14px;display:flex;gap:9px;align-items:flex-start}.check b{color:#9b5311}.check span{color:#b56c16;font-size:18px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.rating{display:flex;align-items:center;gap:25px;margin-top:28px;padding-top:20px;border-top:1px solid #e3dacb;font-size:13px;color:#68716e}.stars{color:#e39a19;font-size:18px;letter-spacing:2px}.secure{color:#28755e}
+.contact-card{position:absolute;right:0;bottom:100px;width:320px;background:rgba(255,255,255,.94);border:1px solid #e7dfd0;border-radius:20px;padding:20px;box-shadow:var(--shadow)}
+.contact-row{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid #eee7db}.contact-row:last-child{border:0}.contact-icon{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#f5ead4;color:#8a5c18;font-size:20px}.contact-row strong{display:block;font-size:14px}.contact-row small{display:block;color:#777;margin-top:3px}
+section{padding:82px 0}.section-head{text-align:center;margin-bottom:42px}.kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#aa762b;font-weight:800}.section-head h2{font-size:38px;margin:8px 0}.section-head p{color:#6a7470;max-width:650px;margin:auto;line-height:1.7}
+.services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.service{border:1px solid var(--line);padding:28px 18px;text-align:center;border-radius:14px;background:#fff;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#d6bd8a}.icon{width:58px;height:58px;margin:0 auto 16px;border-radius:50%;border:1px solid #dfc994;color:#9c7029;display:grid;place-items:center;font-size:25px;background:#fffaf0}.service h3{font-size:19px}.service p{font-size:13px;line-height:1.6;color:#69736f}
+.about{background:#f7f1e5}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-img{height:440px;border-radius:16px;background:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:var(--shadow)}.about-copy h2{font-size:44px}.about-copy p{line-height:1.8;color:#626c68}.facts{display:flex;gap:22px;margin-top:25px;flex-wrap:wrap}.fact{display:flex;gap:10px;align-items:center}.fact i{font-style:normal;color:#9e712a;font-size:20px}.fact strong{font-size:13px}
+.why{background:#fff}.why-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.why-item{text-align:center;padding:30px 15px;border-right:1px solid var(--line)}.why-item:last-child{border:0}.why-item div{font-size:26px;color:#8e672c}.why-item strong{display:block;margin-top:10px;font-family:"Playfair Display";font-size:17px}.why-item small{color:#727a77}
+.catalog{background:#fbf8f1}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid #e5ded0;border-radius:12px;overflow:hidden;box-shadow:0 5px 18px rgba(32,42,38,.04);transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card-img{height:175px;background-size:cover;background-position:center}.card-body{padding:18px}.tag{display:inline-block;background:#fff3d8;color:#8d601d;border-radius:99px;padding:5px 9px;font-size:11px;font-weight:700;margin-bottom:10px}.card h3{font-size:19px}.card p{font-size:13px;line-height:1.6;color:#69736f}.more{color:#9a6c28;font-weight:700;font-size:13px}
+.cta{padding:0;background:#0d312d;color:white}.cta-inner{padding:42px 0;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{color:white;font-size:33px}.cta p{color:#d0dfda;margin:6px 0 0}.cta-buttons{display:flex;gap:12px;flex-wrap:wrap}.cta .btn-light{background:#fff;color:#193b36}
+footer{background:#0a211f;color:#d4dfdc;padding:45px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}.footer-logo{width:165px;filter:none;display:block}.footer p,.footer a{color:#9eb0ab;font-size:13px;line-height:1.7}.footer h4{color:white;margin:0 0 13px}.copyright{border-top:1px solid #28423e;margin-top:35px;padding-top:20px;display:flex;justify-content:space-between;font-size:12px;color:#829691}
+.floating-wa{position:fixed;right:22px;bottom:22px;z-index:40;background:#00a878;color:white;padding:14px 20px;border-radius:999px;font-weight:700;box-shadow:0 12px 30px rgba(0,80,60,.25)}
+.modal{display:none;position:fixed;inset:0;background:rgba(8,24,21,.62);z-index:100;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{width:min(620px,100%);background:white;border-radius:22px;padding:30px;box-shadow:0 30px 80px #0005;max-height:92vh;overflow:auto}.modal-head{display:flex;justify-content:space-between;gap:20px}.close{border:0;background:#f2eee5;width:38px;height:38px;border-radius:50%;font-size:22px;cursor:pointer}.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}.choice{border:1px solid var(--line);border-radius:14px;padding:18px;cursor:pointer;background:#fff}.choice:hover{border-color:#c59a52;box-shadow:var(--shadow)}.choice strong{display:block;font-size:16px}.choice span{font-size:13px;color:#727a77}.form{display:none}.form.active{display:block}.field{margin:13px 0}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;padding:13px;border:1px solid #ddd5c7;border-radius:10px;font:inherit;outline:none}.field textarea{min-height:100px;resize:vertical}.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+@media(max-width:950px){.navlinks{gap:13px}.navlinks a{font-size:12px}.service-grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.contact-card{position:relative;right:auto;bottom:auto;margin:0 0 50px;width:100%}.hero .container{display:block;padding-top:35px}.hero-copy{padding-bottom:30px}.why-grid{grid-template-columns:repeat(3,1fr)}.why-item:nth-child(3){border-right:0}.why-item:nth-child(n+4){border-top:1px solid var(--line)}}
+@media(max-width:700px){.nav{height:72px}.logo{width:135px;height:68px;transform:scale(1.02);transform-origin:left center}.navlinks,.navright .lang{display:none}.navright{margin-left:auto}.mobile-menu{display:block;border:1px solid #ddd6ca;background:white;border-radius:9px;padding:9px}.hero .container{min-height:auto}.hero-bg{background:linear-gradient(90deg,rgba(248,244,234,.97),rgba(248,244,234,.84)),url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1400&q=80') center/cover}.hero h1{font-size:46px;letter-spacing:-1px}.checkgrid{grid-template-columns:1fr}.hero-actions .btn{width:100%}.rating{flex-direction:column;align-items:flex-start;gap:8px}.service-grid{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr;gap:30px}.about-img{height:300px}.why-grid{grid-template-columns:1fr 1fr}.why-item:nth-child(3){border-right:1px solid var(--line)}.why-item:nth-child(2n){border-right:0}.why-item:nth-child(n+3){border-top:1px solid var(--line)}.cards{grid-template-columns:1fr}.cta-inner{flex-direction:column;align-items:flex-start}.footer-grid{grid-template-columns:1fr 1fr}.copyright{flex-direction:column;gap:8px}.floating-wa{right:12px;bottom:12px;font-size:13px}.choice-grid{grid-template-columns:1fr}}
+
+.airbnb-nav{font-weight:700!important;color:#173d38!important}
+.airbnb-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#00a878;margin-right:7px}
+.brand{display:flex;align-items:center;flex-shrink:0}
+.detail-intro{max-width:860px;margin:-18px auto 42px;text-align:center;color:#66716e;line-height:1.75}
+.prestation-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.prestation-card{position:relative;background:#fff;border:1px solid #e4dccd;border-radius:16px;overflow:hidden;box-shadow:0 6px 22px rgba(25,43,38,.05);transition:.25s}
+.prestation-card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(25,43,38,.11)}
+.prestation-card.airbnb-card{grid-column:1/-1;border:1.5px solid #d4b16a;background:linear-gradient(135deg,#fffdf8,#f7f0df)}
+.prestation-image{height:220px;background-size:cover;background-position:center}
+.prestation-content{padding:24px 25px 26px}
+.prestation-card h3{font-size:22px;line-height:1.15;margin:5px 0 7px}
+.prestation-card .lead{font-size:15px;font-weight:700;color:#8d5d18;margin:0 0 13px}
+.prestation-card p{color:#65706c;line-height:1.65;font-size:14px}
+.feature-list{list-style:none;padding:0;margin:17px 0 0;display:grid;gap:9px}
+.feature-list li{font-size:13px;color:#3f4c48;display:flex;gap:9px;line-height:1.45}
+.feature-list li:before{content:"✓";color:#00a878;font-weight:800}
+.detail-btn{margin-top:20px;border:1px solid #d5c4a3;background:#fffaf0;color:#8e6325;padding:10px 15px;border-radius:999px;font-weight:700;cursor:pointer}
+.detail-btn:hover{background:#173d38;color:white;border-color:#173d38}
+.modal-service{display:none;position:fixed;inset:0;background:rgba(7,25,22,.66);z-index:120;padding:24px;align-items:center;justify-content:center}
+.modal-service.show{display:flex}
+.service-window{width:min(900px,100%);max-height:92vh;overflow:auto;background:#fffdf8;border-radius:22px;box-shadow:0 35px 100px rgba(0,0,0,.35)}
+.service-window-top{height:250px;background-size:cover;background-position:center;position:relative}
+.service-window-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,35,31,.85),rgba(12,35,31,.05))}
+.service-window-title{position:absolute;left:30px;right:70px;bottom:25px;color:white}
+.service-window-title .kicker{color:#e0c27c}
+.service-window-title h2{color:white;font-size:30px;margin-top:6px}
+.service-close{position:absolute;right:20px;top:18px;width:42px;height:42px;border:0;border-radius:50%;background:rgba(255,255,255,.92);font-size:24px;cursor:pointer;z-index:2}
+.service-window-body{padding:30px}
+.service-window-body h3{font-size:24px;margin:0 0 10px}
+.service-window-body .modal-lead{font-size:16px;line-height:1.7;color:#596560;margin:0 0 20px}
+.modal-cols{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.modal-box-section{border-top:1px solid #e7dfd1;padding-top:18px}
+.modal-box-section h4{margin:0 0 12px;color:#173d38}
+.modal-box-section ul{padding-left:20px;margin:0;color:#596560;line-height:1.8;font-size:14px}
+.modal-cta{margin-top:25px;padding:18px;border-radius:14px;background:#f5efe2;display:flex;justify-content:space-between;align-items:center;gap:15px}
+@media(max-width:700px){
+  .logo{width:165px;height:78px;transform:scale(1.04);transform-origin:left center}.nav{gap:10px}
+  .prestation-grid{grid-template-columns:1fr}
+  .prestation-card.airbnb-card{grid-column:auto}
+  .service-window-title h2{font-size:28px}
+  .modal-cols{grid-template-columns:1fr}
+  .service-window-top{height:210px}
+  .service-window-body{padding:22px}
+  .modal-cta{flex-direction:column;align-items:flex-start}
+}
+
+
+.prestations-menu{position:relative}
+.prestations-menu>a{display:flex;align-items:center;gap:5px}
+.prestations-dropdown{
+  display:none;position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);
+  width:320px;background:#fffdf8;border:1px solid #e5dccb;border-radius:15px;
+  box-shadow:0 18px 45px rgba(25,43,38,.15);padding:9px;z-index:90
+}
+.prestations-menu:hover .prestations-dropdown,
+.prestations-menu:focus-within .prestations-dropdown{display:block}
+.prestations-dropdown a{
+  display:block!important;padding:10px 12px!important;border-radius:9px!important;
+  color:#263b36!important;font-size:13px!important;line-height:1.25!important
+}
+.prestations-dropdown a:hover{background:#f3eee3!important;color:#9a5a0a!important}
+.phone-btn{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  border:1px solid #173d38;background:#173d38;color:#fff!important;
+  padding:10px 14px;border-radius:999px;font-weight:700;font-size:13px;
+  white-space:nowrap;transition:.2s
+}
+.phone-btn:hover{background:#0d2b27!important;transform:translateY(-1px)}
+
+.prestation-card{scroll-margin-top:105px}
+@media(max-width:760px){
+  .hero h1,.hero-title{font-size:40px!important}
+  .section-head h2{font-size:31px!important}
+  .prestation-card h3{font-size:20px}
+  .prestations-dropdown{position:static;transform:none;width:auto;margin-top:8px}
+  .prestations-menu:hover .prestations-dropdown{display:none}
+  .prestations-menu.open .prestations-dropdown{display:block}
+  .phone-btn{padding:8px 11px;font-size:12px}
+  
+}
+
+
+.header-whatsapp{
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  gap:6px;
+  text-decoration:none;
+  background:transparent;
+  color:#20b66f!important;
+  padding:5px 7px;
+  border-radius:10px;
+  font-size:17px;
+  font-weight:700;
+  white-space:nowrap;
+  animation:none;
+  box-shadow:none;
+}
+.header-whatsapp .wa-icon{
+  width:31px;height:31px;
+  display:flex;align-items:center;justify-content:center;
+  background:transparent;color:#20b66f;
+  flex:0 0 31px;
+}
+.header-whatsapp .wa-icon svg{width:31px;height:31px;display:block}.header-whatsapp .wa-status{
+  display:none;
+}
+.header-whatsapp .wa-status-dot{display:none}
+.header-whatsapp:hover{color:#16a85f!important;transform:translateY(-1px)}
+@keyframes waPulse{
+  0%,100%{box-shadow:0 7px 20px rgba(10,165,111,.20)}
+  50%{box-shadow:0 7px 28px rgba(10,165,111,.48)}
+}
+.bottom-info{
+  padding:75px 0 90px;
+  background:#173d38;
+  color:#fff;
+}
+.bottom-info .section-head{text-align:left;margin-bottom:30px}
+.bottom-info .section-head h2{color:#fff;font-size:34px}
+.bottom-info .section-head p{color:rgba(255,255,255,.72)}
+.about-engagements{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:30px;
+}
+.about-panel,.engagement-panel{
+  border:1px solid rgba(255,255,255,.13);
+  background:rgba(255,255,255,.055);
+  border-radius:18px;padding:27px;
+}
+.about-panel h3,.engagement-panel h3{margin:0 0 12px;color:#e3c77f;font-size:20px}
+.about-panel p{color:rgba(255,255,255,.78);line-height:1.75;margin:0}
+.engagement-panel ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.engagement-panel li{display:flex;gap:9px;color:rgba(255,255,255,.82);line-height:1.5}
+.engagement-panel li:before{content:"✓";color:#63e6a9;font-weight:900}
+@media(max-width:760px){
+  .header-whatsapp{padding:7px 10px;font-size:11px}
+  .header-whatsapp .wa-icon{width:24px;height:24px}
+  .about-engagements{grid-template-columns:1fr}
+  .bottom-info .section-head h2{font-size:29px}
+}
+
+
+/* V9 — Header contact controls inspired by the supplied reference */
+.navright{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:14px;
+}
+.header-whatsapp{
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:center;
+  gap:8px!important;
+  min-width:104px;
+  height:40px;
+  box-sizing:border-box;
+  padding:7px 13px!important;
+  border:1px solid #7ee8bc!important;
+  border-radius:7px!important;
+  background:#f8fffb!important;
+  color:#173d38!important;
+  font-size:12px!important;
+  font-weight:700!important;
+}
+.header-whatsapp .wa-icon{
+  width:20px!important;height:20px!important;
+  border-radius:0!important;
+  flex:0 0 20px;
+}
+.header-whatsapp .wa-icon svg{
+  width:20px!important;height:20px!important;
+  color:#08a86b!important;
+}
+.header-whatsapp .wa-status{display:none!important;}
+
+.phone-btn{
+  height:40px!important;
+  min-width:106px;
+  box-sizing:border-box;
+  justify-content:center;
+  gap:7px!important;
+  padding:6px 12px!important;
+  border:1px solid #dedbd4!important;
+  border-radius:7px!important;
+  background:#f8f7f4!important;
+  color:#5b5148!important;
+  font-size:12px!important;
+  line-height:1.05!important;
+  font-weight:600!important;
+  white-space:nowrap!important;
+  text-align:center;
+  min-width:175px!important;
+}
+.phone-btn:hover{
+  background:#f3f0ea!important;
+  color:#4b423a!important;
+  transform:translateY(-1px);
+}
+.phone-icon{
+  font-size:13px;
+  line-height:1;
+  color:#a26a43;
+}
+.header-quote-btn{
+  height:48px!important;
+  min-width:155px;
+  padding:7px 14px!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:#9b4300!important;
+  color:#fff!important;
+  box-shadow:none!important;
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-size:12.5px!important;
+  line-height:1.15!important;
+  font-weight:500!important;
+  text-align:center;
+}
+.header-quote-btn:hover{
+  background:#7f3500!important;
+  transform:translateY(-1px);
+}
+.quote-icon{
+  font-size:12px;
+  opacity:.95;
+}
+@media(max-width:900px){
+  .navright{gap:8px}
+  .header-whatsapp{min-width:auto;padding:7px 9px!important}
+  .phone-btn{min-width:auto;padding:6px 9px!important}
+  .header-quote-btn{min-width:auto;padding:7px 10px!important}
+}
+@media(max-width:760px){
+  .navright{gap:6px}
+  .header-whatsapp{min-width:40px;width:40px;padding:7px!important}
+  .header-whatsapp{font-size:0!important}
+  .phone-btn{min-width:40px;width:40px;padding:6px!important;font-size:0!important}
+  .phone-icon{font-size:15px}
+  .header-quote-btn{min-width:104px;font-size:10px!important}
+}
+
+
+
+/* WhatsApp flottant : logo seul + clignotement */
+.floating-wa{
+  position:fixed!important;right:22px!important;bottom:22px!important;z-index:40!important;
+  width:58px!important;height:58px!important;padding:0!important;
+  border-radius:50%!important;background:#00a878!important;color:#fff!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  box-shadow:0 10px 28px rgba(0,128,88,.28)!important;
+  animation:waBlink 1.35s ease-in-out infinite!important;
+  text-decoration:none!important;
+}
+.floating-wa svg{width:34px;height:34px;display:block;fill:currentColor}
+@keyframes waBlink{0%,100%{transform:scale(1);opacity:1;box-shadow:0 10px 28px rgba(0,128,88,.28)}50%{transform:scale(1.10);opacity:.72;box-shadow:0 12px 36px rgba(0,168,120,.58)}}
+@media(max-width:700px){.floating-wa{right:14px!important;bottom:14px!important;width:54px!important;height:54px!important}.floating-wa svg{width:31px;height:31px}}
+
+/* prestation personnalisée */
+.custom-quote-details{margin-top:12px;padding:13px 14px;border:1px solid #d8c7ad;border-radius:12px;background:#fbf7ef}
+.custom-quote-details label{display:block;font-size:12px;font-weight:800;color:#283531;margin-bottom:7px}
+.custom-quote-details textarea{width:100%;box-sizing:border-box;border:1px solid #d8d5ce;border-radius:9px;padding:10px 11px;font:inherit;font-size:13px;resize:vertical;background:#fff;color:#283531}
+.custom-quote-details textarea:focus{outline:2px solid rgba(168,79,0,.16);border-color:#a84f00}
+.custom-quote-details small{display:block;margin-top:7px;color:#7b8380;font-size:11px;line-height:1.45}
+
+/* ===== SIMULATEUR DE DEVIS ===== */
+.quote-simulator{padding:82px 0 90px;background:#f8f6f0}
+.quote-head{text-align:center;max-width:820px;margin:0 auto 42px}
+.quote-head .kicker{color:#a65300;letter-spacing:.12em}
+.quote-head h2{font-size:clamp(34px,4vw,48px);line-height:1.08;margin:7px 0 12px}
+.quote-head p{color:#66716e;line-height:1.65;margin:0}
+.quote-box{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.85fr);background:#fff;border:1px solid #dedbd4;border-radius:22px;overflow:hidden;box-shadow:0 18px 45px rgba(28,29,26,.12);max-width:1120px;margin:auto}
+.quote-form{padding:34px 32px 30px}
+.quote-step{margin-bottom:25px}
+.quote-step:last-child{margin-bottom:0}
+.quote-step-title{font-size:12px;text-transform:uppercase;letter-spacing:.035em;font-weight:800;color:#173d38;margin-bottom:11px}
+.quote-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.quote-service{border:1px solid #dedbd5;background:#fff;border-radius:11px;padding:12px 13px;text-align:left;cursor:pointer;transition:.2s;min-height:66px}
+.quote-service strong{display:block;font-size:13px;color:#24322f;margin-bottom:4px}
+.quote-service span{display:block;color:#7a827f;font-size:10.5px;line-height:1.35}
+.quote-service:hover{border-color:#b78635}
+.quote-service.active{border:1.5px solid #a84f00;background:#fffaf3;box-shadow:inset 0 0 0 1px #f1d5ad}
+.quote-range-wrap{position:relative;padding:4px 2px 0}
+.quote-range-row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.quote-range-value{background:#fff1cf;color:#8b5a0e;font-weight:800;border-radius:999px;padding:4px 10px;font-size:12px}
+.quote-range{width:100%;accent-color:#a84f00;cursor:pointer}
+.quote-scale{display:flex;justify-content:space-between;color:#929795;font-size:9.5px;margin-top:5px}
+.quote-pills{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.quote-pill{border:1px solid #dedbd5;background:#fff;border-radius:10px;padding:10px 8px;font-size:11px;font-weight:700;color:#273431;cursor:pointer;text-align:center}
+.quote-pill.active{background:#a84f00;color:#fff;border-color:#a84f00}
+.quote-options{display:grid;gap:8px}
+.quote-option{display:flex;align-items:flex-start;gap:10px;border:1px solid #dedbd5;border-radius:11px;padding:11px 12px;cursor:pointer}
+.quote-option input{width:16px;height:16px;margin-top:1px;accent-color:#a84f00}
+.quote-option strong{font-size:12px;color:#283531}.quote-option span{font-size:11px;color:#7b8380}
+.quote-select{width:100%;border:1px solid #d9d6cf;border-radius:9px;background:#fff;padding:10px 12px;color:#273431;font-size:12px}
+.quote-summary{background:#1d1b19;color:#fff;padding:34px 32px;display:flex;flex-direction:column;min-height:100%}
+.quote-summary .summary-kicker{display:flex;align-items:center;gap:8px;color:#e4b548;font-size:11px;font-weight:800;text-transform:uppercase}
+.quote-summary .summary-kicker span{font-size:15px}
+.quote-summary h3{font-family:"DM Sans",Arial,sans-serif;color:#fff;font-size:13px;font-weight:500;margin:18px 0 3px}
+.quote-total{display:flex;align-items:baseline;gap:9px;margin:0 0 25px}
+.quote-total strong{font-family:"Playfair Display",Georgia,serif;font-size:54px;line-height:1;color:#fff}
+.quote-total span{font-size:12px;color:#ddd7ce}
+.quote-summary hr{width:100%;border:0;border-top:1px solid rgba(255,255,255,.12);margin:0 0 18px}
+.quote-benefits{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.quote-benefits li{display:flex;gap:8px;font-size:11px;line-height:1.4;color:#e4e1dc}
+.quote-benefits li:before{content:"✓";color:#4ee0a0;font-weight:900}
+.quote-breakdown{margin-top:18px;padding:13px 0;border-top:1px solid rgba(255,255,255,.10);border-bottom:1px solid rgba(255,255,255,.10);display:grid;gap:7px}
+.quote-breakdown div{display:flex;justify-content:space-between;gap:10px;font-size:11px;color:#cfc9c0}
+.quote-breakdown strong{color:#fff}
+.quote-savings{margin-top:12px;padding:12px 13px;border-radius:10px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09)}
+.quote-savings-title{font-size:10px;font-weight:800;color:#e4b548;margin-bottom:9px}
+.quote-savings-row{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#cfc9c0;padding:4px 0}
+.quote-savings-row strong{color:#fff}
+.quote-savings-row.highlight{margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,.10)}
+.quote-savings-row.highlight strong{color:#58e2a1}
+.quote-savings-note{font-size:9px;line-height:1.4;color:#96918a;margin-top:7px}
+.quote-cta{margin-top:auto;padding-top:24px}
+.quote-cta button{width:100%;border:0;background:#c66300;color:#fff;border-radius:10px;padding:14px 12px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s}
+.quote-cta button:hover{background:#a95000;transform:translateY(-1px)}
+.quote-note{text-align:center;color:#aaa49b;font-size:9px;line-height:1.5;margin:9px 5px 0}
+.quote-context{font-size:10px;color:#aaa49b;margin-top:10px;line-height:1.45}
+@media(max-width:900px){.quote-box{grid-template-columns:1fr}.quote-summary{min-height:470px}.quote-cta{margin-top:28px}}
+@media(max-width:600px){.quote-form,.quote-summary{padding:25px 18px}.quote-service-grid{grid-template-columns:1fr}.quote-pills{grid-template-columns:1fr}.quote-head{margin-bottom:28px}.quote-simulator{padding:60px 0}.quote-total strong{font-size:48px}}
+
+
+.service-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.service-actions .detail-btn{margin-top:0;flex:1}
+.reserve-service-btn{border:0;background:#a94f00;color:#fff;border-radius:9px;padding:10px 12px;font-size:11px;font-weight:800;cursor:pointer;transition:.2s;white-space:nowrap}
+.reserve-service-btn:hover{background:#813c00;transform:translateY(-1px)}
+@media(max-width:600px){.service-actions{flex-direction:column}.reserve-service-btn,.service-actions .detail-btn{width:100%}}
+.testimonial-card{transition:opacity .35s ease,transform .35s ease}
+.testimonial-card.is-changing{opacity:.15;transform:translateY(4px)}
+.testimonial-note{font-size:10px;color:#8b928e;margin-top:12px}
+.service-review{margin-top:14px;padding-top:12px;border-top:1px solid #eee5d7;font-size:11px;color:#66706b;text-align:left}
+.service-review .stars{color:#c77a12;letter-spacing:1px;font-size:12px;font-weight:700}
+.service-review .review-line{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:5px}
+.service-review .review-label{font-size:9px;text-transform:uppercase;letter-spacing:.7px;color:#9a5a20;font-weight:700}
+.service-review .review-text{font-style:italic;line-height:1.45;color:#4d5652}
+.service-review .review-author{margin-top:4px;font-size:10px;color:#89908c}
+.testimonials-section{padding:70px 0;background:#f8f4ea}
+.testimonial-wrap{display:grid;grid-template-columns:1fr 2fr;gap:22px;align-items:stretch}
+.testimonial-intro{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:0 8px 25px rgba(30,35,30,.06)}
+.testimonial-intro h2{margin:8px 0 12px;font-size:34px;line-height:1.08}
+.testimonial-intro p{color:#69736f;line-height:1.7;font-size:14px}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.testimonial-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 25px rgba(30,35,30,.05);transition:opacity .25s ease}
+.testimonial-card .t-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.testimonial-card .avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#edf5ee;color:#176342;font-weight:700}
+.testimonial-card .t-stars{color:#c77a12;letter-spacing:1px;font-size:12px;margin:10px 0}
+.testimonial-card .t-text{font-family:Georgia,serif;font-style:italic;line-height:1.55;color:#26332f;font-size:15px}
+.testimonial-card small{color:#8b928e}
+@media(max-width:950px){.testimonial-wrap{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.testimonial-grid{grid-template-columns:1fr}.testimonial-intro h2{font-size:28px}}
+
+/* ===== HERO ACCUEIL — nouvelle première page, barre haute conservée ===== */
+.home-hero{position:relative;overflow:hidden;background:#f8f4ea;border-bottom:1px solid #eee4d3}
+.home-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 48%,rgba(255,255,255,.88),rgba(248,244,234,0) 42%);pointer-events:none}
+.home-hero .home-hero-inner{position:relative;max-width:1400px;margin:0 auto;min-height:650px;padding:54px 28px 58px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(380px,.92fr);gap:44px;align-items:center}
+.home-hero-copy{position:relative;z-index:2;padding:10px 0 10px}
+.home-hero-badge{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border:1px solid #e2c79f;border-radius:999px;background:#fff8ec;color:#95500d;font-size:13px;font-weight:700;margin-bottom:25px}
+.home-hero-badge .sep{opacity:.45}
+.home-hero h1{margin:0;max-width:680px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(38px,4.4vw,58px);line-height:1.06;letter-spacing:-1.7px;color:#171513}
+.home-hero-intro{max-width:720px;margin:23px 0 24px;color:#4d514f;font-size:16px;line-height:1.58}
+.home-hero-intro strong{color:#1e2421;font-weight:750}
+.home-hero-points{display:grid;grid-template-columns:1fr 1fr;gap:19px 30px;max-width:790px;margin:0 0 32px}
+.home-hero-point{display:flex;gap:11px;align-items:flex-start;color:#303532;font-size:14px;line-height:1.45}
+.home-hero-point .point-icon{flex:0 0 19px;width:19px;height:19px;border:2px solid #b75b0d;border-radius:50%;color:#b75b0d;display:grid;place-items:center;font-size:10px;margin-top:1px}
+.home-hero-point strong{display:block;color:#262a28}
+.home-hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.home-hero-btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:54px;padding:0 25px;border-radius:10px;text-decoration:none;font-size:15px;font-weight:750;transition:.2s ease}
+.home-hero-btn.primary{background:#a84800;color:#fff;box-shadow:0 5px 12px rgba(118,57,6,.16)}
+.home-hero-btn.secondary{background:#fff;color:#1c2522;border:1px solid #ddd9d0;box-shadow:0 3px 8px rgba(0,0,0,.06)}
+.home-hero-btn:hover{transform:translateY(-1px)}
+.home-hero-visual{position:relative;min-height:510px;display:flex;align-items:center;justify-content:center}
+.home-hero-photo{width:min(100%,560px);height:440px;border-radius:25px;object-fit:cover;box-shadow:0 18px 45px rgba(47,39,26,.17);border:4px solid rgba(255,255,255,.78)}
+.home-hero-photo-label{display:none!important}
+.home-float-card{position:absolute;background:rgba(255,255,255,.96);border:1px solid #eee6da;border-radius:17px;box-shadow:0 14px 28px rgba(35,32,26,.14);padding:15px 18px;display:flex;gap:12px;align-items:center;max-width:235px}
+.home-float-card.top{right:-2px;top:54px}.home-float-card.bottom{left:0;bottom:43px}
+.home-float-icon{width:44px;height:44px;flex:0 0 44px;border-radius:13px;display:grid;place-items:center;font-size:20px;background:#eff9f2;color:#20765a;border:1px solid #c9ebd9}
+.home-float-card.bottom .home-float-icon{background:#fff4df;color:#b25a0a;border-color:#f1d8ae}
+.home-float-card b{display:block;font-size:13px;color:#252825;margin-bottom:3px}.home-float-card span{display:block;color:#77756f;font-size:11px;line-height:1.35}
+@media(max-width:1050px){.home-hero .home-hero-inner{grid-template-columns:1fr;gap:25px}.home-hero-copy{padding-top:5px}.home-hero-visual{min-height:420px}.home-hero-photo{height:390px}.home-float-card.top{right:4%;top:20px}.home-float-card.bottom{left:4%;bottom:20px}}
+@media(max-width:700px){.home-hero .home-hero-inner{padding:38px 18px 42px;min-height:auto}.home-hero h1{font-size:42px;letter-spacing:-1.4px}.home-hero-intro{font-size:16px;line-height:1.55}.home-hero-points{grid-template-columns:1fr;gap:14px}.home-hero-actions{flex-direction:column}.home-hero-btn{width:100%}.home-hero-visual{min-height:355px}.home-hero-photo{height:330px;border-radius:19px}.home-float-card{padding:11px 13px;max-width:205px}.home-float-card.top{right:0;top:8px}.home-float-card.bottom{left:0;bottom:8px}.home-float-icon{width:37px;height:37px;flex-basis:37px}}
+
+
+/* V27 — intérieur bourgeois en pleine taille dans le cadre */
+.home-hero-visual{min-height:540px;}
+.home-hero-photo{width:min(100%,640px);height:500px;object-fit:cover;object-position:center;border-radius:25px;border:4px solid rgba(255,255,255,.82);box-shadow:0 20px 48px rgba(47,39,26,.18);}
+@media(max-width:1050px){.home-hero-visual{min-height:470px}.home-hero-photo{width:min(100%,640px);height:450px}}
+@media(max-width:700px){.home-hero-visual{min-height:390px}.home-hero-photo{height:360px;width:100%;border-radius:19px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#accueil"><img class="logo" src="assets/images/logo.png" alt="Maisonéa Services"></a>
+    <nav class="navlinks">
+      <a href="#catalogue">Nos prestations</a>
+      <a class="airbnb-nav" href="#catalogue"><span class="airbnb-dot"></span>Entretien & Airbnb</a>
+            <a href="#devis">Tarifs & Simulateur</a>
+      <a href="#engagements">Nos engagements</a><a href="#avis">Avis</a>
+
+</nav>
+    <div class="navright">
+      
+    <a class="header-whatsapp" href="https://wa.me/33754030138" target="_blank" rel="noopener" aria-label="WhatsApp Maisonéa Services">
+  <span class="wa-icon" aria-hidden="true">
+<svg viewBox="0 0 32 32" role="img">
+<path fill="currentColor" d="M19.11 17.2c-.27-.14-1.61-.79-1.86-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.34-.79-.71-1.33-1.58-1.49-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.67 1.11 2.85.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.55.57.65.21 1.24.18 1.71.11.52-.08 1.61-.66 1.84-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z"/>
+<path fill="currentColor" d="M16.02 4.03c-6.61 0-11.98 5.37-11.98 11.98 0 2.11.55 4.09 1.51 5.81L4 28l6.36-1.67a11.92 11.92 0 0 0 5.66 1.44h.01c6.61 0 11.98-5.37 11.98-11.98S22.64 4.03 16.02 4.03zm0 21.75h-.01a9.75 9.75 0 0 1-4.97-1.37l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.75 9.75 0 1 1 8.34 4.65z"/>
+</svg></span>
+  <span class="wa-label">WhatsApp</span>
+</a>
+      <a class="phone-btn" href="tel:+33754030138" aria-label="Appeler Maisonéa Services">
+  <span class="phone-icon" aria-hidden="true">☎</span><span>+33 7 54 03 01 38</span>
+</a>
+<button class="btn btn-gold header-quote-btn" onclick="openBooking()"><span class="quote-icon" aria-hidden="true">▣</span><span>Devis Immédiat<br>Gratuit</span></button>
+      <button class="mobile-menu" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="home-hero" id="accueil-hero">
+  <div class="home-hero-inner">
+    <div class="home-hero-copy">
+      <div class="home-hero-badge">Paris intra-muros &amp; Île-de-France <span class="sep">•</span> Activité d'entretien déclarée</div>
+      <h1>L’art du soin pour votre maison, vos locations Airbnb et vos proches.</h1>
+      <p class="home-hero-intro"><strong>Ménage minutieux, vaisselle étincelante et linge soigné</strong> pour particuliers, professionnels et hôtes Airbnb. Mais aussi <strong>accompagnement avec un nutritionniste professionnel agréé</strong>, aide bienveillante aux courses, accompagnement médical et présence chaleureuse à Paris.</p>
+      <div class="home-hero-points">
+        <div class="home-hero-point"><span class="point-icon">✓</span><div><strong>Entretien des maisons &amp; Airbnb :</strong> standard hôtelier &amp; rotations rapides</div></div>
+        <div class="home-hero-point"><span class="point-icon">✓</span><div><strong>Nutrition &amp; assistance :</strong> conseils personnalisés avec un professionnel agréé</div></div>
+        <div class="home-hero-point"><span class="point-icon">✓</span><div><strong>Courses &amp; rendez-vous médecin :</strong> accompagnement sécurisé et véhiculé</div></div>
+        <div class="home-hero-point"><span class="point-icon">✓</span><div><strong>Compagnie &amp; soutien moral :</strong> écoute humaine, bienveillance et présence</div></div>
+      </div>
+      <div class="home-hero-actions">
+        <button type="button" class="home-hero-btn primary" onclick="openBooking()">Calculer un devis sur mesure <span>→</span></button>
+        <a class="home-hero-btn secondary" href="#catalogue">✧ &nbsp; Découvrir nos 7 prestations</a>
+      </div>
+    </div>
+    <div class="home-hero-visual">
+      <img class="home-hero-photo" src="assets/images/hero-interieur.jpg" alt="Maison bourgeoise parisienne élégante — Maisonéa Services">
+      <div class="home-hero-photo-label">PARIS • STANDARD D’EXCELLENCE</div>
+      <div class="home-float-card top"><div class="home-float-icon">♡</div><div><b>Présence &amp; Douceur</b><span>Nutrition agréée, courses &amp; réconfort au quotidien</span></div></div>
+      <div class="home-float-card bottom"><div class="home-float-icon">✧</div><div><b>Spécialiste Airbnb</b><span>Nettoyage complet, faits &amp; contrôle soigné</span></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="catalogue" id="catalogue">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Maisonéa Services</div>
+      <h2>Prestations</h2>
+    </div>
+    <div class="prestation-grid">
+
+            <article id="service-menage" class="prestation-card">
+        <div class="prestation-image" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85')"></div>
+        <div class="prestation-content">
+          <span class="tag">MAISON • GESTION AIRBNB</span>
+          <h3>Ménage, Vaisselle & Entretien Courant du Foyer</h3>
+          <p class="lead">Retrouvez un intérieur impeccable et respirez au quotidien — <strong>gestion Airbnb mise en avant</strong></p>
+          <p>Que ce soit régulièrement ou ponctuellement, notre équipe prend soin de chaque recoin de votre domicile avec délicatesse. <strong>Nous assurons également la gestion du ménage et des rotations Airbnb</strong> pour maintenir votre logement prêt à accueillir vos voyageurs.</p>
+          <ul class="feature-list">
+            <li>Aspiration et lavage soigné des parquets, tomettes et carrelages</li>
+            <li>Nettoyage complet de la cuisine, vaisselle et appareils électroménagers</li>
+            <li>Désinfection et brillance de la salle d’eau</li>
+          </ul>
+          <div class="service-actions">
+            <button class="detail-btn" onclick="openService('menage')">Voir la prestation en détail →</button>
+            <button class="reserve-service-btn" onclick="openBookingFor('menage')">Réserver / Devis gratuit</button>
+          </div>
+          <div class="service-review" data-review-key="menage">
+            <div class="review-line"><span class="review-label">Avis de démonstration</span><span class="stars">★★★★☆</span></div>
+            <div class="review-text">« Un intérieur impeccable et une équipe très attentive. »</div>
+            <div class="review-author">Nathalie, Paris</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="service-linge" class="prestation-card">
+        <div class="prestation-image" style="background-image:url('https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1000&q=85')"></div>
+        <div class="prestation-content">
+          <span class="tag">LINGE</span>
+          <h3>Traitement du Linge, Lessives & Repassage Minutieux</h3>
+          <p class="lead">Des vêtements prêts à porter et des draps d’une fraîcheur absolue</p>
+          <p>Nous gérons le cycle complet du linge de maison et de votre garde-robe avec un respect attentif des matières.</p>
+          <ul class="feature-list">
+            <li>Tri méticuleux par couleurs et matières textiles</li>
+            <li>Lavage selon vos programmes et lessives préférées</li>
+            <li>Repassage traditionnel à plat avec fer vapeur</li>
+          </ul>
+          <div class="service-actions">
+            <button class="detail-btn" onclick="openService('linge')">Voir la prestation en détail →</button>
+            <button class="reserve-service-btn" onclick="openBookingFor('linge')">Réserver / Devis gratuit</button>
+          </div>
+          <div class="service-review" data-review-key="linge">
+            <div class="review-line"><span class="review-label">Avis de démonstration</span><span class="stars">★★★★★</span></div>
+            <div class="review-text">« Linge parfaitement plié et repassé, très pratique. »</div>
+            <div class="review-author">Sophie, Paris</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="service-nutrition" class="prestation-card">
+        <div class="prestation-image" style="background-image:url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=85')"></div>
+        <div class="prestation-content">
+          <span class="tag">NUTRITION</span>
+          <h3>Nutrition personnalisée avec un nutritionniste professionnel agréé</h3>
+          <p class="lead">Un accompagnement nutritionnel professionnel, personnalisé et bienveillant</p>
+          <p>Bénéficiez d’un accompagnement conçu avec un nutritionniste professionnel et agréé : bilan, conseils adaptés et recommandations concrètes.</p>
+          <ul class="feature-list">
+            <li>Bilan nutritionnel et écoute attentive de vos habitudes</li>
+            <li>Conseils personnalisés selon vos objectifs et votre situation</li>
+            <li>Recommandations de menus équilibrés, simples et adaptés</li>
+          </ul>
+          <div class="service-actions">
+            <button class="detail-btn" onclick="openService('nutrition')">Voir la prestation en détail →</button>
+            <button class="reserve-service-btn" onclick="openBookingFor('nutrition')">Réserver / Devis gratuit</button>
+          </div>
+          <div class="service-review" data-review-key="nutrition">
+            <div class="review-line"><span class="review-label">Avis de démonstration</span><span class="stars">★★★★☆</span></div>
+            <div class="review-text">« Des conseils clairs et faciles à intégrer au quotidien. »</div>
+            <div class="review-author">Isabelle, Paris</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="service-courses" class="prestation-card">
+        <div class="prestation-image" style="background-image:url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85')"></div>
+        <div class="prestation-content">
+          <span class="tag">ACCOMPAGNEMENT</span>
+          <h3>Accompagnement aux Courses & Rendez-vous Médicaux</h3>
+          <p class="lead">Sécurité, ponctualité et bras droit pour toutes vos sorties</p>
+          <p>Nous vous accompagnons pas à pas avec une écoute attentive et une présence rassurante dans les rues de Paris et les transports.</p>
+          <ul class="feature-list">
+            <li>Accompagnement au marché, supermarché ou commerces de proximité</li>
+            <li>Portage des sacs et rangement des courses</li>
+            <li>Déplacement sécurisé et ponctualité pour les consultations</li>
+          </ul>
+          <div class="service-actions">
+            <button class="detail-btn" onclick="openService('courses')">Voir la prestation en détail →</button>
+            <button class="reserve-service-btn" onclick="openBookingFor('courses')">Réserver / Devis gratuit</button>
+          </div>
+          <div class="service-review" data-review-key="courses">
+            <div class="review-line"><span class="review-label">Avis de démonstration</span><span class="stars">★★★★★</span></div>
+            <div class="review-text">« Accompagnement ponctuel, rassurant et très organisé. »</div>
+            <div class="review-author">Claire, Paris</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="service-compagnie" class="prestation-card">
+        <div class="prestation-image" style="background-image:url('https://images.unsplash.com/photo-1559234938-b60fff04894d?auto=format&fit=crop&w=1000&q=85')"></div>
+        <div class="prestation-content">
+          <span class="tag">PRÉSENCE HUMAINE</span>
+          <h3>Compagnie, Écoute & Soutien Moral Bienveillant</h3>
+          <p class="lead">Une présence humaine sincère pour égayer chaque journée</p>
+          <p>Parce que le bien-être émotionnel compte aussi, nos intervenants apportent conversation, présence et moments de convivialité.</p>
+          <ul class="feature-list">
+            <li>Partage d’un thé, discussion ou lecture du journal</li>
+            <li>Jeux de société, mots croisés et stimulation douce</li>
+            <li>Promenades récréatives dans les squares et jardins parisiens</li>
+          </ul>
+          <div class="service-actions">
+            <button class="detail-btn" onclick="openService('compagnie')">Voir la prestation en détail →</button>
+            <button class="reserve-service-btn" onclick="openBookingFor('compagnie')">Réserver / Devis gratuit</button>
+          </div>
+          <div class="service-review" data-review-key="compagnie">
+            <div class="review-line"><span class="review-label">Avis de démonstration</span><span class="stars">★★★★★</span></div>
+            <div class="review-text">« Une présence chaleureuse et toujours à l’écoute. »</div>
+            <div class="review-author">Élodie, Paris</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="service-pro" class="prestation-card">
+        <div class="prestation-image" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85')"></div>
+        <div class="prestation-content">
+          <span class="tag">PROFESSIONNELS</span>
+          <h3>Entretien des Locaux Professionnels, Bureaux & Boutiques</h3>
+          <p class="lead">Une vitrine éclatante pour accueillir vos clients et collaborateurs</p>
+          <p>Notre activité d’entretien courant des locaux s’adresse également aux cabinets, agences, ateliers et espaces de travail à Paris.</p>
+          <ul class="feature-list">
+            <li>Nettoyage et désinfection des postes de travail, claviers et téléphones</li>
+            <li>Vidage des corbeilles et tri sélectif consciencieux</li>
+            <li>Entretien des sanitaires et coins café / kitchenette</li>
+          </ul>
+          <div class="service-actions">
+            <button class="detail-btn" onclick="openService('pro')">Voir la prestation en détail →</button>
+            <button class="reserve-service-btn" onclick="openBookingFor('pro')">Réserver / Devis gratuit</button>
+          </div>
+          <div class="service-review" data-review-key="pro">
+            <div class="review-line"><span class="review-label">Avis de démonstration</span><span class="stars">★★★★☆</span></div>
+            <div class="review-text">« Locaux propres, passage régulier et communication simple. »</div>
+            <div class="review-author">Thomas, Paris</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="testimonials-section" id="avis">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Avis & témoignages</div>
+      <h2>Une expérience pensée pour vous rassurer</h2>
+      <p>Quelques exemples de présentation d’avis clients. Les témoignages affichés ici sont des contenus de démonstration à remplacer par vos avis réels.</p>
+    </div>
+    <div class="testimonial-wrap">
+      <div class="testimonial-intro">
+        <div class="kicker">À propos des avis</div>
+        <h2>Votre confiance, notre priorité</h2>
+        <p>Cette section permet de mettre en valeur les retours clients avec une note, un commentaire et le type de prestation concerné.</p>
+        <button type="button" class="btn btn-dark" onclick="openBooking()">Demander un devis →</button>
+      </div>
+      <div class="testimonial-grid" id="testimonialGrid">
+        <article class="testimonial-card" data-slot="0"></article>
+        <article class="testimonial-card" data-slot="1"></article>
+        <article class="testimonial-card" data-slot="2"></article>
+      </div>
+      <div class="testimonial-note">Avis illustratifs pour la présentation du site — à remplacer par vos avis clients réels avant publication.</div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-simulator" id="devis">
+  <div class="container">
+    <div class="quote-head">
+      <div class="kicker">SIMPLICITÉ &amp; TRANSPARENCE</div>
+      <h2>Simulateur de Devis Instantané à Paris</h2>
+      <p>Obtenez en quelques clics une estimation indicative selon votre prestation, votre surface, votre fréquence et vos besoins.</p>
+    </div>
+
+    <div class="quote-box">
+      <div class="quote-form">
+        <div class="quote-step">
+          <div class="quote-step-title">1. Quelle prestation souhaitez-vous ?</div>
+          <div class="quote-service-grid" id="quoteServices">
+            <button type="button" class="quote-service active" data-service="airbnb"><strong>✨ Rotation Airbnb</strong><span>Ménage + contrôle entre voyageurs</span></button>
+            <button type="button" class="quote-service" data-service="menage"><strong>🏠 Ménage &amp; Vaisselle</strong><span>Entretien foyer &amp; grand nettoyage</span></button>
+            <button type="button" class="quote-service" data-service="linge"><strong>🧺 Linge &amp; Repassage</strong><span>Lessives, pliage &amp; repassage</span></button>
+            <button type="button" class="quote-service" data-service="nutrition"><strong>🥗 Nutrition personnalisée</strong><span>Conseils &amp; accompagnement</span></button>
+            <button type="button" class="quote-service" data-service="courses"><strong>🛍️ Courses &amp; Rendez-vous</strong><span>Accompagnement de proximité</span></button>
+            <button type="button" class="quote-service" data-service="compagnie"><strong>🤝 Compagnie &amp; Écoute</strong><span>Présence &amp; soutien bienveillant</span></button>
+            <button type="button" class="quote-service" data-service="pro"><strong>🏢 Locaux Professionnels</strong><span>Bureaux, cabinets &amp; boutiques</span></button>
+            <button type="button" class="quote-service" data-service="custom"><strong>✨ Prestation personnalisée</strong><span>Besoin spécifique ou combinaison de services</span></button>
+          </div>
+          <div id="customQuoteDetails" class="custom-quote-details" style="display:none">
+            <label for="quoteCustomNeed">Décrivez votre besoin</label>
+            <textarea id="quoteCustomNeed" rows="3" placeholder="Ex. ménage + linge + préparation de repas, fréquence, nombre de pièces…"></textarea>
+            <small>Nous préparons un devis personnalisé selon votre demande. Aucun tarif automatique n’est appliqué à cette prestation.</small>
+          </div>
+        </div>
+
+        <div class="quote-step" id="quoteSurfaceStep">
+          <div class="quote-range-row">
+            <div class="quote-step-title" style="margin-bottom:0">2. Superficie estimée du lieu</div>
+            <div class="quote-range-value"><span id="quoteSurfaceValue">45</span> m²</div>
+          </div>
+          <div class="quote-range-wrap">
+            <input id="quoteSurface" class="quote-range" type="range" min="20" max="150" step="5" value="45" aria-label="Superficie en mètres carrés">
+            <div class="quote-scale"><span>Studio (20 m²)</span><span>2–3 pièces (55 m²)</span><span>Grand espace (100 m²+)</span></div>
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <div class="quote-step-title">3. Fréquence des interventions</div>
+          <div class="quote-pills" id="quoteFrequency">
+            <button type="button" class="quote-pill active" data-freq="once">Ponctuel</button>
+            <button type="button" class="quote-pill" data-freq="weekly">1× / semaine (-10%)</button>
+            <button type="button" class="quote-pill" data-freq="twice">2×+ / semaine (-15%)</button>
+            <button type="button" class="quote-pill" data-freq="monthly">1 mois / 4× (-20%)</button>
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <div class="quote-step-title">4. Options complémentaires</div>
+          <div class="quote-options">
+            <label class="quote-option"><input type="checkbox" id="quoteLinge"><span><strong>Gestion du linge &amp; repassage</strong> <span>draps, serviettes, pliage soigné</span></span></label>
+            <label class="quote-option"><input type="checkbox" id="quoteCuisine"><span><strong>Préparation culinaire à domicile</strong> <span>plats frais adaptés à vos besoins</span></span></label>
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <div class="quote-step-title">5. Localisation à Paris</div>
+          <select id="quoteLocation" class="quote-select">
+            <option>Paris Centre — 1er–4e</option>
+            <option>5e–7e</option>
+            <option>8e–11e</option>
+            <option>12e–15e</option>
+            <option>16e–17e</option>
+            <option>18e–20e</option>
+            <option>Île-de-France — sur demande</option>
+          </select>
+        </div>
+      </div>
+
+      <aside class="quote-summary" aria-live="polite">
+        <div class="summary-kicker"><span>▦</span> Estimation indicative instantanée</div>
+        <h3 id="quoteSummaryLabel">Tarif estimé TTC :</h3>
+        <div class="quote-total"><strong id="quoteTotal">95 €</strong><span id="quoteUnit">/ rotation</span></div>
+        <hr>
+        <ul class="quote-benefits">
+          <li>Intervenants qualifiés, déclarés &amp; assurés à Paris</li>
+          <li>Produits écologiques et matériel professionnel fournis selon la prestation</li>
+          <li>Échange préalable pour adapter la prestation à votre besoin</li>
+          <li>Devis final personnalisé avant toute intervention</li>
+        </ul>
+        <div class="quote-breakdown">
+          <div><span>Tarif standard / intervention</span><strong id="quoteBase">95 €</strong></div>
+          <div><span>Économie / jour</span><strong id="quoteDiscount">—</strong></div>
+          <div><span>Options / intervention</span><strong id="quoteOptions">0 €</strong></div>
+        </div>
+        <div class="quote-savings" aria-live="polite">
+          <div class="quote-savings-title">💶 Votre économie avec la régularité</div>
+          <div class="quote-savings-row"><span>Tarif choisi / intervention</span><strong id="quoteChosenPerVisit">95 €</strong></div>
+          <div class="quote-savings-row"><span>Budget estimé sur 1 mois</span><strong id="quoteMonthlyTotal">95 €</strong></div>
+          <div class="quote-savings-row highlight"><span>Économie vs ponctuel</span><strong id="quoteMonthlySavings">0 €</strong></div>
+          <div class="quote-savings-note" id="quoteSavingsNote">Base indicative : 1 intervention ponctuelle.</div>
+        </div>
+        <div class="quote-context" id="quoteContext">Rotation Airbnb pour 45 m².</div>
+        <div class="quote-cta">
+          <button type="button" id="quoteConfirm">Confirmer &amp; recevoir mon devis officiel →</button>
+          <div class="quote-note">Réponse sous 2 heures par SMS ou email • estimation sans engagement</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<section class="bottom-info" id="a-propos">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Maisonéa Services</div>
+      <h2>À propos de nous &amp; Nos engagements</h2>
+      <p>Une présence professionnelle, attentive et humaine au service des particuliers et des professionnels à Paris.</p>
+    </div>
+
+    <div class="about-engagements">
+      <div class="about-panel">
+        <h3>À propos de nous</h3>
+        <p>
+          Maisonéa Services accompagne les particuliers, les propriétaires de locations courte durée,
+          les hôtes Airbnb et les professionnels dans l'entretien courant des espaces et dans les
+          services du quotidien. Notre approche repose sur la qualité d'exécution, la ponctualité,
+          la discrétion et une attention particulière aux besoins de chaque client.
+        </p>
+      </div>
+
+      <div class="engagement-panel" id="engagements">
+        <h3>Nos engagements</h3>
+        <ul>
+          <li>Interventions soignées et organisées selon vos besoins</li>
+          <li>Communication claire avant, pendant et après la prestation</li>
+          <li>Respect du domicile, des locaux et des habitudes du client</li>
+          <li>Solutions régulières ou ponctuelles à Paris et en Île-de-France</li>
+          <li>Accompagnement humain, discret et bienveillant</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div><img class="footer-logo" src="assets/images/logo-footer.png" alt="Maisonéa Services"><p>Entretien courant des locaux, aide à domicile et accompagnement à Paris.</p></div>
+   <div><h4>Navigation</h4><a href="#catalogue">Nos prestations</a><br><a href="#catalogue">Nos services</a><br><a href="#engagements">Nos engagements</a></div>
+   <div><h4>Contact</h4><a href="https://wa.me/330754030138" target="_blank">WhatsApp : +00330754030138</a><br><a href="mailto:hannakerbi@gmail.com">hannakerbi@gmail.com</a><br><span>Paris & Île-de-France</span></div>
+   <div><h4>Réservation</h4><p>Demandez votre devis personnalisé en quelques clics.</p><button class="btn btn-gold" onclick="openBooking()">Réserver / Devis</button></div>
+  </div>
+  <div class="copyright"><span>© 2026 Maisonéa Services. Tous droits réservés.</span><span>Entretien courant des locaux | Paris</span></div>
+ </div>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/33754030138" target="_blank" rel="noopener" aria-label="WhatsApp Maisonéa Services">
+<svg viewBox="0 0 32 32" aria-hidden="true">
+<path d="M19.11 17.2c-.27-.14-1.61-.79-1.86-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.34-.79-.71-1.33-1.58-1.49-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.67 1.11 2.85.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.55.57.65.21 1.24.18 1.71.11.52-.08 1.61-.66 1.84-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z"/>
+<path d="M16.02 4.03c-6.61 0-11.98 5.37-11.98 11.98 0 2.11.55 4.09 1.51 5.81L4 28l6.36-1.67a11.92 11.92 0 0 0 5.66 1.44h.01c6.61 0 11.98-5.37 11.98-11.98S22.64 4.03 16.02 4.03zm0 21.75h-.01a9.75 9.75 0 0 1-4.97-1.37l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.75 9.75 0 1 1 8.34 4.65z"/>
+</svg></a>
+
+
+<div class="modal-service" id="serviceModal">
+  <div class="service-window">
+    <div class="service-window-top" id="serviceHero">
+      <button class="service-close" onclick="closeService()">×</button>
+      <div class="service-window-overlay"></div>
+      <div class="service-window-title">
+        <div class="kicker" id="serviceKicker">PRESTATION</div>
+        <h2 id="serviceTitle">Maisonéa Services</h2>
+      </div>
+    </div>
+    <div class="service-window-body">
+      <h3 id="serviceLeadTitle">Une prestation pensée pour vous</h3>
+      <p class="modal-lead" id="serviceDescription"></p>
+      <div class="modal-cols">
+        <div class="modal-box-section">
+          <h4>Ce que nous réalisons</h4>
+          <ul id="serviceBullets"></ul>
+        </div>
+        <div class="modal-box-section">
+          <h4>Pour qui ?</h4>
+          <ul id="serviceAudience"></ul>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <div><strong>Besoin d’un service personnalisé ?</strong><br><span style="color:#68736f;font-size:13px">Demandez votre devis ou choisissez une date d’intervention.</span></div>
+        <button class="btn btn-gold" onclick="closeService();openBooking()">Réserver / Demander un devis →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="bookingModal">
+ <div class="modal-box">
+  <div class="modal-head"><div><div class="kicker">Maisonéa Services</div><h2 style="font-size:32px">Réserver / Demander un devis</h2><p style="color:#68736f">Choisissez votre mode de contact.</p></div><button class="close" onclick="closeBooking()">×</button></div>
+  <div id="choices" class="choice-grid">
+   <div class="choice" onclick="showForm('wa')"><strong>◉ WhatsApp</strong><span>Envoyer votre demande directement sur WhatsApp.</span></div>
+   <div class="choice" onclick="showForm('email')"><strong>✉ Email</strong><span>Préparer une demande à hannakerbi@gmail.com.</span></div>
+  </div>
+  <form id="bookingForm" class="form" onsubmit="submitBooking(event)">
+   <div class="field"><label>Nom et prénom</label><input id="name" required placeholder="Votre nom"></div>
+   <div class="field"><label>Téléphone</label><input id="phone" required placeholder="+33 ..."></div>
+   <div class="field"><label>Prestation</label><select id="service"><option>Ménage & entretien</option><option>Nettoyage Airbnb</option><option>Linge & vaisselle</option><option>Préparation des repas & nutrition</option><option>Courses & rendez-vous médecin</option><option>Compagnie & soutien moral</option><option>Entretien de locaux professionnels</option><option>Autre / Devis personnalisé</option></select></div>
+   <div class="field"><label>Date souhaitée</label><input id="date" type="date"></div>
+   <div class="field"><label>Message / détails</label><textarea id="message" placeholder="Décrivez votre besoin, adresse approximative, fréquence, nombre de pièces, etc."></textarea></div>
+   <div class="form-actions"><button type="submit" class="btn btn-gold" id="submitBtn">Envoyer la demande</button><button type="button" class="btn btn-light" onclick="resetChoice()">Retour</button></div>
+  </form>
+ </div>
+</div>
+
+
+<script>
+
+function togglePrestationsMenu(e){
+  if(window.innerWidth <= 760){
+    e.preventDefault();
+    const menu=e.currentTarget.parentElement;
+    menu.classList.toggle('open');
+  }
+}
+
+
+const serviceData = {
+  airbnb:{
+    kicker:"AIRBNB & COURTE DURÉE",
+    title:"Ménage & Rotation Clé en Main",
+    lead:"L’exigence hôtelière pour des avis 5 étoiles garantis",
+    desc:"Service complet conçu sur mesure pour les propriétaires, hôtes Airbnb et conciergeries parisiennes. Nous transformons votre appartement entre deux séjours avec une rigueur hôtelière irréprochable.",
+    image:"https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=1500&q=85",
+    bullets:["Nettoyage en profondeur de toutes les pièces","Changement du linge de lit et des serviettes de bain","Pliage soigné et présentation des lits","Vérification des stocks d’accueil","Contrôle final avant l’arrivée du prochain voyageur"],
+    audience:["Propriétaires de locations Airbnb","Hôtes de courte durée","Conciergeries parisiennes","Résidences secondaires en location"]
+  },
+  menage:{
+    kicker:"MAISON",
+    title:"Ménage, Vaisselle & Entretien Courant",
+    lead:"Retrouvez un intérieur impeccable et respirez au quotidien",
+    desc:"Que ce soit de façon régulière — hebdomadaire ou bi-hebdomadaire — ou ponctuelle, notre équipe prend soin de chaque recoin de votre domicile avec délicatesse.",
+    image:"https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1500&q=85",
+    bullets:["Aspiration et lavage des parquets, tomettes et carrelages","Nettoyage complet de la cuisine","Vaisselle et appareils électroménagers","Désinfection de la salle d’eau","Grand nettoyage après déménagement ou réception"],
+    audience:["Particuliers","Familles","Résidences principales","Personnes souhaitant un entretien ponctuel"]
+  },
+  linge:{
+    kicker:"LINGE",
+    title:"Linge, Lessives & Repassage",
+    lead:"Des vêtements prêts à porter et des draps d’une fraîcheur absolue",
+    desc:"Nous gérons le cycle complet du linge de maison et de votre garde-robe avec un respect attentif des matières et de vos habitudes.",
+    image:"https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1500&q=85",
+    bullets:["Tri par couleurs et matières","Lavage selon vos programmes préférés","Séchage et pliage soigné","Repassage à plat avec fer vapeur","Linge de lit et serviettes Airbnb"],
+    audience:["Particuliers","Familles","Hôtes Airbnb","Personnes recherchant une prise en charge complète du linge"]
+  },
+  nutrition:{
+    kicker:"NUTRITION",
+    title:"Nutrition personnalisée",
+    lead:"Un accompagnement nutritionnel professionnel, personnalisé et bienveillant",
+    desc:"Bénéficiez d’un accompagnement conçu avec un nutritionniste professionnel et agréé : bilan de vos habitudes, conseils adaptés et recommandations concrètes pour des repas équilibrés au quotidien.",
+    image:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1500&q=85",
+    bullets:["Bilan nutritionnel et écoute attentive","Conseils personnalisés selon vos objectifs","Recommandations de menus équilibrés","Aide à l’organisation des repas","Accompagnement des habitudes alimentaires au quotidien"],
+    audience:["Personnes souhaitant mieux organiser leurs repas","Familles","Personnes accompagnées à domicile","Clients recherchant un suivi nutritionnel personnalisé"]
+  },
+  courses:{
+    kicker:"ACCOMPAGNEMENT",
+    title:"Courses & Rendez-vous Médicaux",
+    lead:"Sécurité, ponctualité et bras droit pour toutes vos sorties",
+    desc:"Nous vous accompagnons pas à pas, avec une écoute attentive et une présence rassurante dans les rues de Paris et les transports.",
+    image:"https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1500&q=85",
+    bullets:["Accompagnement au marché et supermarché","Portage des sacs","Rangement des courses dans les placards et réfrigérateur","Accompagnement aux consultations et examens","Organisation de sorties selon vos besoins"],
+    audience:["Personnes âgées","Personnes isolées","Personnes ayant besoin d’un accompagnement ponctuel","Familles recherchant un soutien de proximité"]
+  },
+  compagnie:{
+    kicker:"PRÉSENCE HUMAINE",
+    title:"Compagnie, Écoute & Soutien Moral",
+    lead:"Une présence humaine sincère pour égayer chaque journée",
+    desc:"Nos intervenants apportent un rayon de soleil, une conversation stimulante et une présence apaisante au sein du domicile.",
+    image:"https://images.unsplash.com/photo-1559234938-b60fff04894d?auto=format&fit=crop&w=1500&q=85",
+    bullets:["Partage d’un thé et conversation","Lecture du journal","Jeux de société et mots croisés","Stimulation douce de la mémoire","Promenades récréatives dans les jardins parisiens"],
+    audience:["Personnes seules","Seniors","Familles souhaitant une présence de proximité","Personnes recherchant convivialité et écoute"]
+  },
+  pro:{
+    kicker:"PROFESSIONNELS",
+    title:"Entretien des Locaux Professionnels",
+    lead:"Une vitrine éclatante pour accueillir vos clients et collaborateurs",
+    desc:"Notre activité d’entretien courant des locaux s’adresse aux cabinets, agences, ateliers d’artistes, boutiques et espaces de travail à Paris.",
+    image:"https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=85",
+    bullets:["Nettoyage et désinfection des postes de travail","Nettoyage des claviers et téléphones","Vidage des corbeilles et tri sélectif","Entretien des sanitaires","Nettoyage des coins café et kitchenettes"],
+    audience:["Bureaux","Cabinets libéraux","Boutiques et commerces","Agences et ateliers professionnels"]
+  }
+};
+
+function openService(key){
+  const s=serviceData[key];
+  if(!s) return;
+  document.getElementById('serviceKicker').textContent=s.kicker;
+  document.getElementById('serviceTitle').textContent=s.title;
+  document.getElementById('serviceLeadTitle').textContent=s.lead;
+  document.getElementById('serviceDescription').textContent=s.desc;
+  document.getElementById('serviceHero').style.backgroundImage=`url("${s.image}")`;
+  document.getElementById('serviceBullets').innerHTML=s.bullets.map(x=>`<li>${x}</li>`).join('');
+  document.getElementById('serviceAudience').innerHTML=s.audience.map(x=>`<li>${x}</li>`).join('');
+  document.getElementById('serviceModal').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeService(){
+  document.getElementById('serviceModal').classList.remove('show');
+  document.body.style.overflow='';
+}
+document.getElementById('serviceModal').addEventListener('click',e=>{
+  if(e.target.id==='serviceModal') closeService();
+});
+
+
+/* ===== LOGIQUE SIMULATEUR DE DEVIS ===== */
+(function(){
+  const rates = {
+    airbnb:{base:65, perM2:.67, unit:'/ rotation', label:'Rotation Airbnb'},
+    menage:{hourly:32, unit:'/ intervention', label:'Ménage & entretien'},
+    linge:{hourly:30, unit:'/ intervention', label:'Linge & repassage'},
+    nutrition:{session:55, unit:'/ séance', label:'Nutrition personnalisée'},
+    courses:{hourly:32, unit:'/ heure', label:'Courses & rendez-vous'},
+    compagnie:{hourly:30, unit:'/ heure', label:'Compagnie & écoute'},
+    pro:{hourly:38, unit:'/ intervention', label:'Locaux professionnels'},
+    custom:{unit:'', label:'Prestation personnalisée'}
+  };
+  const state={service:'airbnb',surface:45,freq:'once',linge:false,cuisine:false,location:'Paris Centre — 1er–4e',customNeed:''};
+  const $=id=>document.getElementById(id);
+
+  function surfaceHours(m2){
+    if(m2<=30) return 2;
+    if(m2<=50) return 2.5;
+    if(m2<=70) return 3;
+    if(m2<=100) return 4;
+    if(m2<=125) return 5;
+    return 6;
+  }
+
+  function calculate(){
+    let base=0, unit=rates[state.service].unit, label=rates[state.service].label;
+    const needsSurface=['airbnb','menage','pro'].includes(state.service);
+    const isCustom=state.service==='custom';
+    $('quoteSurfaceStep').style.display=needsSurface?'block':'none';
+    $('customQuoteDetails').style.display=isCustom?'block':'none';
+
+    if(isCustom){
+      $('quoteSummaryLabel').textContent='Devis personnalisé :';
+      $('quoteTotal').textContent='Sur devis';
+      $('quoteUnit').textContent='';
+      $('quoteBase').textContent='À définir';
+      $('quoteDiscount').textContent='—';
+      $('quoteOptions').textContent='Selon besoin';
+      $('quoteChosenPerVisit').textContent='Sur devis';
+      $('quoteMonthlyTotal').textContent='Sur devis';
+      $('quoteMonthlySavings').textContent='—';
+      $('quoteSavingsNote').textContent='Notre équipe étudie votre demande et vous propose une estimation adaptée.';
+      $('quoteContext').textContent=(state.customNeed||'Prestation personnalisée selon vos besoins')+'.';
+      return {total:'Sur devis',base:0,options:0,label:'Prestation personnalisée',unit:'',discount:0,chosenPerVisit:0,monthlyTotal:0,monthlySavings:0,visitsPerMonth:1,custom:true};
+    }
+
+    if(state.service==='airbnb'){
+      base=Math.round(rates.airbnb.base + state.surface*rates.airbnb.perM2);
+    }else if(state.service==='nutrition'){
+      base=rates.nutrition.session;
+    }else{
+      base=Math.round(rates[state.service].hourly * (needsSurface ? surfaceHours(state.surface) : 1));
+    }
+
+    let discount=0;
+    if(state.freq==='weekly') discount=.10;
+    if(state.freq==='twice') discount=.15;
+    if(state.freq==='monthly') discount=.20;
+
+    const visitsPerMonth = state.freq==='once' ? 1 : state.freq==='weekly' ? 4 : state.freq==='twice' ? 8 : 4;
+    let options=0;
+    if(state.linge) options+=20;
+    if(state.cuisine) options+=25;
+
+    const standardPerVisit=base+options;
+    const chosenPerVisit=Math.round(standardPerVisit*(1-discount));
+    const monthlyTotal=chosenPerVisit*visitsPerMonth;
+    const standardMonthly=standardPerVisit*visitsPerMonth;
+    const monthlySavings=Math.max(0,standardMonthly-monthlyTotal);
+    const displayTotal=state.freq==='monthly' ? monthlyTotal : chosenPerVisit;
+    const displayUnit=state.freq==='monthly' ? '/ mois' : unit;
+
+    $('quoteSurfaceValue').textContent=state.surface;
+    $('quoteSummaryLabel').textContent=state.freq==='monthly'?'Forfait mensuel indicatif TTC :':state.service==='airbnb'?'Tarif estimé TTC :':'Estimation indicative TTC :';
+    $('quoteTotal').textContent=displayTotal.toLocaleString('fr-FR')+' €';
+    $('quoteUnit').textContent=displayUnit;
+    $('quoteBase').textContent=base.toLocaleString('fr-FR')+' €';
+    $('quoteDiscount').textContent=discount?`-${Math.round(base*discount).toLocaleString('fr-FR')} €`:'—';
+    $('quoteOptions').textContent=options?`+${options} €`:'0 €';
+    $('quoteChosenPerVisit').textContent=chosenPerVisit.toLocaleString('fr-FR')+' €';
+    $('quoteMonthlyTotal').textContent=monthlyTotal.toLocaleString('fr-FR')+' €';
+    $('quoteMonthlySavings').textContent=monthlySavings?`-${monthlySavings.toLocaleString('fr-FR')} €`:'0 €';
+
+    let savingsNote='Base indicative : 1 intervention ponctuelle.';
+    if(state.freq==='weekly') savingsNote=`4 interventions/mois • économie de ${Math.round(standardPerVisit*0.10).toLocaleString('fr-FR')} € par intervention.`;
+    if(state.freq==='twice') savingsNote=`8 interventions/mois • économie de ${Math.round(standardPerVisit*0.15).toLocaleString('fr-FR')} € par intervention.`;
+    if(state.freq==='monthly') savingsNote=`4 interventions/mois • remise régulière de 20 % • économie de ${Math.round(standardPerVisit*0.20).toLocaleString('fr-FR')} € par intervention.`;
+    $('quoteSavingsNote').textContent=savingsNote;
+
+    let context=label;
+    if(needsSurface) context += ` pour ${state.surface} m²`;
+    if(state.freq==='weekly') context += ' • rythme hebdomadaire';
+    if(state.freq==='twice') context += ' • rythme renforcé';
+    if(state.freq==='monthly') context += ' • formule 1 mois / 4 interventions';
+    if(state.location.includes('Île-de-France')) context += ' • zone à confirmer';
+    $('quoteContext').textContent=context+'.';
+
+    return {total:displayTotal,base,options,label,unit:displayUnit,discount,chosenPerVisit,monthlyTotal,monthlySavings,visitsPerMonth};
+  }
+
+  document.querySelectorAll('.quote-service').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.quote-service').forEach(x=>x.classList.remove('active'));
+      btn.classList.add('active');
+      state.service=btn.dataset.service;
+      calculate();
+    });
+  });
+  document.querySelectorAll('.quote-pill').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.quote-pill').forEach(x=>x.classList.remove('active'));
+      btn.classList.add('active');
+      state.freq=btn.dataset.freq;
+      calculate();
+    });
+  });
+  $('quoteSurface').addEventListener('input',e=>{state.surface=Number(e.target.value)||20;calculate()});
+  $('quoteLinge').addEventListener('change',e=>{state.linge=e.target.checked;calculate()});
+  $('quoteCuisine').addEventListener('change',e=>{state.cuisine=e.target.checked;calculate()});
+  $('quoteLocation').addEventListener('change',e=>{state.location=e.target.value;calculate()});
+  $('quoteCustomNeed').addEventListener('input',e=>{state.customNeed=e.target.value.trim();calculate()});
+
+  $('quoteConfirm').addEventListener('click',()=>{
+    const q=calculate();
+    openBooking();
+    const freqLabel=state.freq==='once'?'Ponctuel':state.freq==='weekly'?'1× / semaine':state.freq==='twice'?'2×+ / semaine':'1 mois / 4 interventions';
+    const msg=q.custom
+      ? `Demande de devis personnalisé depuis le simulateur Maisonéa Services\n\nPrestation : ${q.label}\nBesoin : ${state.customNeed||'À préciser avec Maisonéa Services'}\nFréquence : ${freqLabel}\nOptions : ${[state.linge?'Linge & repassage':'',state.cuisine?'Préparation culinaire':''].filter(Boolean).join(', ')||'Aucune'}\nLocalisation : ${state.location}`
+      : `Demande de devis depuis le simulateur Maisonéa Services\n\nPrestation : ${q.label}\nEstimation : ${q.total} € ${q.unit}\nTarif choisi / intervention : ${q.chosenPerVisit} €\nBudget estimé sur 1 mois : ${q.monthlyTotal} €\nÉconomie vs ponctuel : ${q.monthlySavings} €\nSurface : ${state.surface} m²\nFréquence : ${freqLabel}\nOptions : ${[state.linge?'Linge & repassage':'',state.cuisine?'Préparation culinaire':''].filter(Boolean).join(', ')||'Aucune'}\nLocalisation : ${state.location}`;
+    setTimeout(()=>{
+      const area=$('message');
+      if(area) area.value=msg;
+      const sel=$('service');
+      if(sel){
+        const map={airbnb:'Nettoyage Airbnb',menage:'Ménage & entretien',linge:'Linge & vaisselle',nutrition:'Préparation des repas & nutrition',courses:'Courses & rendez-vous médecin',compagnie:'Compagnie & soutien moral',pro:'Entretien de locaux professionnels',custom:'Autre / Devis personnalisé'};
+        sel.value=map[state.service]||'Autre / Devis personnalisé';
+      }
+    },0);
+  });
+
+  calculate();
+})();
+
+let contactMode='';
+function openBooking(){document.getElementById('bookingModal').classList.add('show');document.body.style.overflow='hidden'}
+function closeBooking(){document.getElementById('bookingModal').classList.remove('show');document.body.style.overflow='';resetChoice()}
+function resetChoice(){contactMode='';document.getElementById('choices').style.display='grid';document.getElementById('bookingForm').classList.remove('active')}
+function showForm(mode){contactMode=mode;document.getElementById('choices').style.display='none';document.getElementById('bookingForm').classList.add('active');document.getElementById('submitBtn').textContent=mode==='wa'?'Envoyer via WhatsApp':'Préparer l’email'}
+function openBookingFor(serviceKey){
+ const labels={
+   airbnb:'Nettoyage Airbnb',
+   menage:'Ménage & entretien',
+   linge:'Linge & vaisselle',
+   nutrition:'Préparation des repas & nutrition',
+   courses:'Courses & rendez-vous médecin',
+   compagnie:'Compagnie & soutien moral',
+   pro:'Entretien de locaux professionnels'
+ };
+ const select=document.getElementById('service');
+ if(select && labels[serviceKey]){
+   const option=[...select.options].find(o=>o.text===labels[serviceKey]);
+   if(option) select.value=option.value;
+ }
+ openBooking();
+}
+function submitBooking(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim(), phone=document.getElementById('phone').value.trim();
+ const service=document.getElementById('service').value, date=document.getElementById('date').value, message=document.getElementById('message').value.trim();
+ const text=`Bonjour Maisonéa Services,\n\nJe souhaite réserver / demander un devis.\n\nNom : ${name}\nTéléphone : ${phone}\nPrestation : ${service}\nDate souhaitée : ${date||'À définir'}\nDétails : ${message||'Aucun détail supplémentaire'}\n\nMerci.`;
+ if(contactMode==='wa'){
+   window.open('https://wa.me/330754030138?text='+encodeURIComponent(text),'_blank');
+ }else{
+   window.location.href='mailto:hannakerbi@gmail.com?subject='+encodeURIComponent('Demande de réservation / devis - Maisonéa Services')+'&body='+encodeURIComponent(text);
+ }
+}
+document.getElementById('bookingModal').addEventListener('click',e=>{if(e.target.id==='bookingModal')closeBooking()});
+</script>
+
+<script>
+(function(){
+  const serviceSamples={
+    airbnb:[['★★★★★','« Appartement prêt à l’heure et très soigné. »'],['★★★★☆','« Rotation efficace, linge bien préparé. »'],['★★★★★','« Organisation claire entre deux séjours. »']],
+    menage:[['★★★★★','« Très propre, avec une vraie attention aux détails. »'],['★★★★☆','« Une intervention régulière et rassurante. »'],['★★★★★','« Cuisine et salle de bain impeccables. »']],
+    linge:[['★★★★★','« Linge frais, trié et soigneusement repassé. »'],['★★★★☆','« Service pratique et très minutieux. »'],['★★★★★','« Draps et vêtements parfaitement préparés. »']],
+    nutrition:[['★★★★☆','« Des recommandations simples et personnalisées. »'],['★★★★★','« Accompagnement clair et facile à suivre. »'],['★★★★☆','« Une approche attentive à mes habitudes. »']],
+    courses:[['★★★★★','« Ponctuel et très rassurant pour mes déplacements. »'],['★★★★☆','« Courses bien organisées et aide précieuse. »'],['★★★★★','« Une présence attentive du début à la fin. »']],
+    compagnie:[['★★★★★','« Une présence chaleureuse et respectueuse. »'],['★★★★★','« Des moments agréables et beaucoup d’écoute. »'],['★★★★☆','« Une compagnie douce et bienveillante. »']],
+    pro:[['★★★★☆','« Passage régulier et locaux bien entretenus. »'],['★★★★★','« Travail propre et communication simple. »'],['★★★★☆','« Une organisation adaptée à nos horaires. »']]
+  };
+  const serviceKeys=Object.keys(serviceSamples);
+  const serviceNames={
+    airbnb:'Rotation Airbnb',menage:'Ménage & entretien',linge:'Linge & repassage',
+    nutrition:'Nutrition personnalisée',courses:'Courses & rendez-vous',
+    compagnie:'Compagnie & soutien',pro:'Locaux professionnels'
+  };
+  const profiles=[
+    ['Sophie L.','Paris 15e','S'],['Camille D.','Paris 8e','C'],['Nathalie R.','Paris 16e','N'],
+    ['Thomas B.','Boulogne-Billancourt','T'],['Isabelle M.','Neuilly-sur-Seine','I'],
+    ['Claire P.','Paris 7e','C'],['Élodie G.','Paris 12e','E'],['Julien M.','Paris 17e','J'],
+    ['Marie A.','Paris 6e','M'],['Antoine R.','Paris 5e','A'],['Valérie C.','Paris 14e','V'],
+    ['Hélène F.','Paris 11e','H']
+  ];
+  const testimonialTexts=[
+    'Une équipe ponctuelle, attentive et vraiment soignée. Je recommande pour la qualité du service.',
+    'Très bonne communication et beaucoup de sérieux. Le résultat correspond parfaitement à mes attentes.',
+    'Une présence rassurante et professionnelle. Tout est expliqué clairement et avec beaucoup de soin.',
+    'Service efficace et agréable, avec une vraie attention aux détails et à nos habitudes.',
+    'Très pratique au quotidien : ponctualité, écoute et travail propre. Une belle tranquillité d’esprit.',
+    'Une équipe chaleureuse et organisée. La prestation est réalisée avec beaucoup de délicatesse.',
+    'Nous apprécions la régularité du service et la simplicité des échanges avec Maisonéa Services.',
+    'Une intervention bien préparée, discrète et professionnelle. Expérience très agréable.'
+  ];
+
+  function pick(arr){return arr[Math.floor(Math.random()*arr.length)]}
+
+  const reviewNodes=[...document.querySelectorAll('.service-review')];
+  function rotateServiceReviews(){
+    reviewNodes.forEach(n=>{
+      const a=serviceSamples[n.dataset.reviewKey]; if(!a)return;
+      const x=pick(a), profile=pick(profiles);
+      const stars=n.querySelector('.stars'), text=n.querySelector('.review-text'), author=n.querySelector('.review-author');
+      if(stars)stars.textContent=x[0];
+      if(text)text.textContent=x[1];
+      if(author)author.textContent=profile[0]+', '+profile[1];
+    });
+  }
+
+  const grid=document.getElementById('testimonialGrid');
+  function renderTestimonials(){
+    if(!grid)return;
+    const cards=[...grid.querySelectorAll('.testimonial-card')];
+    cards.forEach(c=>c.classList.add('is-changing'));
+    setTimeout(()=>{
+      const used=new Set();
+      cards.forEach(card=>{
+        let profile;
+        do { profile=pick(profiles); } while(used.has(profile[0]) && used.size<profiles.length);
+        used.add(profile[0]);
+        const serviceKey=pick(serviceKeys);
+        const rating=pick(['★★★★★','★★★★★','★★★★☆','★★★★★']);
+        const text=pick(testimonialTexts);
+        card.innerHTML=`<div class="t-head"><div><strong>${profile[0]}</strong><br><small>${profile[1]} · ${serviceNames[serviceKey]}</small></div><div class="avatar">${profile[2]}</div></div><div class="t-stars">${rating}</div><div class="t-text">« ${text} »</div>`;
+        card.classList.remove('is-changing');
+      });
+    },280);
+  }
+
+  rotateServiceReviews();
+  renderTestimonials();
+  setInterval(rotateServiceReviews,5000);
+  setInterval(renderTestimonials,6000);
+})();
+</script>
+</body>
+</html>
